@@ -1,7 +1,7 @@
 # ONE Cafe（架空カフェサイト）
 
 ## ワイヤーフレーム
-![fictional-cafe-site-wireframe](https://user-images.githubusercontent.com/79129786/133947289-bb489d8e-1d94-4aa6-89fb-cb0db342e701.png)
+<img width="499" alt="fictional-cafe-site-wireframe" src="https://user-images.githubusercontent.com/79129786/135194868-ce6efa09-d0f0-4d1f-8c95-dd0d36a0f9a3.png">
 
 ## デザインカンプ
-![fictional-cafe-site-design](https://user-images.githubusercontent.com/79129786/134146429-72c37af2-a300-4e20-9225-0de6bf7e2451.png)
+<img width="501" alt="fictional-cafe-site-design" src="https://user-images.githubusercontent.com/79129786/135194860-48068efa-46cb-4f78-9e84-cf6b99c68f41.png">
