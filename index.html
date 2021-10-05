@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <title>fictional-cafe-site</title>
   </head>
   <body>
@@ -18,12 +19,32 @@
       <h1>
         <a href="index.html">ONE Cafe</a>
       </h1>
-      <div class="burger-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav >
+      <!-- burger-menu --------------------------------------------->
+      <div id="burger-btn">
+        <div class="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      <nav class="sm">
+        <ul>
+          <li><a href="#">CONCEPT</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">ACCESS</a></li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/twitter-icon-burger-menu.svg" alt="twitter-icon-pc">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/instagram-icon-burger-menu.svg" alt="instagram-icon-pc">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- burger-menuここまで --------------------------------------------->
+      <nav class="pc">
         <ul>
           <li><a href="#">CONCEPT</a></li>
           <li><a href="#">MENU</a></li>
@@ -41,6 +62,7 @@
         </ul>
       </nav>
     </header>
+    <!-- headerここまで --------------------------------------------->
     <!-- header固定確認用 --------------------------------------------->
     <div class="test">
       <p>テキストテキスト</p>
@@ -62,5 +84,7 @@
       <p>テキストテキスト</p>
       <p>テキストテキスト</p>
     </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <script src="jquery-3.5.1.min.js"></script> -->
   </body>
 </html>
