@@ -1,9 +1,12 @@
 $(function() {
   $('#burger-btn').on('click', function(){
     $('.icon').toggleClass('close');
-    $('.sm').slideToggle();
+    $('.sp').slideToggle();
   });
 });
+
+
+
 
 // $(function() {
 //   $('#burger-btn').click(function() {
@@ -17,3 +20,4 @@ $(function() {
 //       }
 //   });
 // });
+
