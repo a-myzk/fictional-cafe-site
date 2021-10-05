@@ -1,9 +1,9 @@
-// $(function() {
-//   $('#burger-btn').on('click', function(){
-//     $('.icon').toggleClass('active');
-//     $('.sp').slideToggle();
-//   });
-// });
+$(function() {
+  $('#burger-btn').on('click', function(){
+    $('.burger-icon').toggleClass('active');
+    $('.sp').slideToggle();
+  });
+});
 
 
 
@@ -32,10 +32,12 @@
 //   });
 // });
 
-$(function() {
-  $('#burger-btn').on('click', function(){
-    $(this).toggleClass('active');
-    $('.sp').slideToggle();
-    $('.sp').removeClass('active');
-  });
-});
+
+
+// $(function() {
+//   $('#burger-btn').on('click', function(){
+//     $(this).toggleClass('active');
+//     $('.sp').slideToggle();
+//     $('.sp').removeClass('active');
+//   });
+// });
