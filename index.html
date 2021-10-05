@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>fictional-cafe-site</title>
-</head>
-<body>
-  hello
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>fictional-cafe-site</title>
+  </head>
+  <body>
+    <!-- header --------------------------------------------->
+    <header id="header">
+      <h1>
+        <a href="index.html">ONE Cafe</a>
+      </h1>
+      <!-- burger-menu --------------------------------------------->
+      <div id="burger-btn">
+        <div class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="sp">
+        <ul>
+          <li><a href="#">CONCEPT</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">ACCESS</a></li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/twitter-icon-burger-menu.svg" alt="twitter-icon-pc">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/instagram-icon-burger-menu.svg" alt="instagram-icon-pc">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- burger-menuここまで --------------------------------------------->
+      <nav class="pc">
+        <ul>
+          <li><a href="#">CONCEPT</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">ACCESS</a></li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/twitter-icon-pc.svg" alt="twitter-icon-pc">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/instagram-icon-pc.svg" alt="instagram-icon-pc">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- headerここまで --------------------------------------------->
+
+    <!-- main-visual --------------------------------------------->
+    <main>
+      <div id="main-visual">
+        <!-- <img src="img/main-image-pc.png" alt="main-image-pc"> -->
+        <img class="img-pc" src="img/main-image-pc.png" alt="main-image-pc">
+        <img class="img-sp" src="img/main-image-responsive.png" alt="main-image-responsive">
+      </div>
+    </main>
+    <!-- main-visualここまで --------------------------------------------->
+
+  </body>
 </html>
