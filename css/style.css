@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* レイアウト確認用アウトライン */
-/* * { outline: 2px solid #8f8ead;} */
+* { outline: 2px solid #8f8ead;}
 
 html {
   font-size: 100%;
@@ -55,6 +55,7 @@ h2 {
 p {
   font-family: "游ゴシック体", YuGothic;
   font-size: 0.875rem;
+  line-height: 24px;
 }
 .wrapper {
   margin: 0 auto;
