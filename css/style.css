@@ -221,6 +221,26 @@ p {
     text-align: center;
     color: #333333;
   }
+
+  /* concept
+  ------------------------------------------- */
+  #concept {
+    margin: 50px auto;
+  }
+  #concept .concept-content {
+    flex-flow: column;
+  }
+  #concept .concept-content img {
+    margin: 25px auto 0;
+    width: 50%;
+  }
+  #concept .concept-intro {
+    margin-top: 0;
+    margin-left: 8%;
+  }
+  #concept .concept-intro p {
+    margin-top: 11%;
+  }
 }
 
 /* スマートフォンサイズ
