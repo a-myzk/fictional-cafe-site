@@ -49,6 +49,13 @@ h1 a {
   color: #F9F7F3;
   font-size: 1.5rem;
 }
+h2 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: "游ゴシック体", YuGothic;
+  font-size: 0.875rem;
+}
 .wrapper {
   margin: 0 auto;
   padding: 0 11.71875%;
