@@ -138,11 +138,9 @@ p {
 }
 #concept .concept-gallery {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 40px 50px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  /* justify-content: center; */
-  /* align-items: center; */
   place-items: center;
   margin-top: 12%;
 }
@@ -154,6 +152,12 @@ p {
   li a::after {
   border-bottom: solid 2px #333333;
   }
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
   /* header
   ------------------------------------------- */
   #burger-btn {
@@ -235,11 +239,18 @@ p {
     width: 50%;
   }
   #concept .concept-intro {
-    margin-top: 0;
-    margin-left: 8%;
+    margin: 0 5px;
   }
   #concept .concept-intro p {
-    margin-top: 11%;
+    margin-top: 50px;
+  }
+  #concept .concept-gallery {
+    display: grid;
+    grid-gap: 20px 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    margin-top: 25px;
   }
 }
 
@@ -251,8 +262,19 @@ p {
   .img-pc {
     display: none;
   }
-
   .img-sp {
       display: block;
   }
+
+  /* concept
+  ------------------------------------------- */
+  /* #concept .concept-gallery {
+    flex-flow: column;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    margin-top: 25px;
+  } */
 }
