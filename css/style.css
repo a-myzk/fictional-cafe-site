@@ -58,6 +58,7 @@ p {
   line-height: 24px;
 }
 .wrapper {
+  width: 100%;
   margin: 0 auto;
   padding: 0 11.71875%;
 }
@@ -120,13 +121,17 @@ p {
 }
 #concept .concept-content {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
 }
 #concept .concept-content img {
-  margin-left: 77px;
+  margin: 0 6%;
+  width: 33%;
 }
 #concept .concept-intro {
   margin-top: calc(100px - 53px);
-  margin-left: 80px;
+  margin-left: 8%;
 }
 #concept .concept-intro p {
   margin-top: 50px;
