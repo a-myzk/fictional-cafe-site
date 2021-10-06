@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* レイアウト確認用アウトライン */
-/* * { outline: 2px solid #8f8ead;} */
+/* * { outline: 2px solid #f39800;} */
 
 html {
   font-size: 100%;
@@ -48,6 +48,19 @@ img {
 h1 a {
   color: #F9F7F3;
   font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: "游ゴシック体", YuGothic;
+  font-size: 0.875rem;
+  line-height: 24px;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 11.71875%;
 }
 
 /* header
@@ -101,6 +114,37 @@ h1 a {
   display: none;
 }
 
+/* concept
+------------------------------------------- */
+#concept {
+  margin: 0 auto;
+}
+#concept .concept-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+}
+#concept .concept-content img {
+  margin: 53px 6% 0 15px;
+  width: 33%;
+}
+#concept .concept-intro {
+  margin-top: 10%;
+  margin-left: 8%;
+}
+#concept .concept-intro p {
+  margin-top: 11%;
+}
+#concept .concept-gallery {
+  display: grid;
+  grid-gap: 40px 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  margin-top: 12%;
+}
+
 /* タブレットサイズ
 -------------------------------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
@@ -108,6 +152,12 @@ h1 a {
   li a::after {
   border-bottom: solid 2px #333333;
   }
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+
   /* header
   ------------------------------------------- */
   #burger-btn {
@@ -175,6 +225,33 @@ h1 a {
     text-align: center;
     color: #333333;
   }
+
+  /* concept
+  ------------------------------------------- */
+  #concept {
+    margin: 50px auto;
+  }
+  #concept .concept-content {
+    flex-flow: column;
+  }
+  #concept .concept-content img {
+    margin: 25px auto 0;
+    width: 50%;
+  }
+  #concept .concept-intro {
+    margin: 0 5px;
+  }
+  #concept .concept-intro p {
+    margin-top: 50px;
+  }
+  #concept .concept-gallery {
+    display: grid;
+    grid-gap: 20px 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    margin-top: 25px;
+  }
 }
 
 /* スマートフォンサイズ
@@ -185,8 +262,19 @@ h1 a {
   .img-pc {
     display: none;
   }
-
   .img-sp {
       display: block;
   }
+
+  /* concept
+  ------------------------------------------- */
+  /* #concept .concept-gallery {
+    flex-flow: column;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    margin-top: 25px;
+  } */
 }
