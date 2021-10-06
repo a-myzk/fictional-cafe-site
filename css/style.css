@@ -105,6 +105,25 @@ h1 a {
   display: none;
 }
 
+/* concept
+------------------------------------------- */
+#concept {
+  margin-top: 53px;
+}
+#concept .concept-content {
+  display: flex;
+}
+#concept .concept-content img {
+  margin-left: 77px;
+}
+#concept .concept-intro {
+  margin-top: calc(100px - 53px);
+  margin-left: 80px;
+}
+#concept .concept-intro p {
+  margin-top: 50px;
+}
+
 /* タブレットサイズ
 -------------------------------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
