@@ -52,12 +52,14 @@ h1 a {
 h2 {
   font-size: 1.5rem;
 }
-p {
+p,
+span {
   font-family: "游ゴシック体", YuGothic;
   font-size: 0.875rem;
   line-height: 24px;
 }
 .wrapper {
+  max-width: 1470px;
   width: 100%;
   margin: 0 auto;
   padding: 0 11.71875%;
@@ -145,6 +147,31 @@ p {
   margin-top: 12%;
 }
 
+/* menu
+------------------------------------------- */
+#menu {
+  margin-top: 65px;
+}
+#menu .menu-content {
+  padding: 35px 80px 25px;
+  background-color: #EDEAE5;
+}
+#menu .menu-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#menu .menu-content li {
+  width: 47%;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #C4C4C4;
+}
+#menu .menu-content li .menu-price {
+  float: right;
+}
+
 /* タブレットサイズ
 -------------------------------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
@@ -152,9 +179,10 @@ p {
   li a::after {
   border-bottom: solid 2px #333333;
   }
+  h2 {
+    margin-left: 10px;
+  }
   .wrapper {
-    width: 100%;
-    margin: 0 auto;
     padding: 0 5%;
   }
 
@@ -243,6 +271,7 @@ p {
   }
   #concept .concept-intro p {
     margin-top: 50px;
+    margin-left: 10px;
   }
   #concept .concept-gallery {
     display: grid;
@@ -251,6 +280,21 @@ p {
     grid-template-rows: auto;
     place-items: center;
     margin-top: 25px;
+  }
+
+  /* menu
+  ------------------------------------------- */
+  #menu .menu-content {
+    padding: 15px 0 5px;
+    background-color: #EDEAE5;
+  }
+  #menu .menu-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu .menu-content li {
+    width: calc(100% - 20px);
   }
 }
 
@@ -265,16 +309,4 @@ p {
   .img-sp {
       display: block;
   }
-
-  /* concept
-  ------------------------------------------- */
-  /* #concept .concept-gallery {
-    flex-flow: column;
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    place-items: center;
-    margin-top: 25px;
-  } */
 }
