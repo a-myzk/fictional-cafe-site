@@ -179,6 +179,9 @@ span {
   li a::after {
   border-bottom: solid 2px #333333;
   }
+  h2 {
+    margin-left: 10px;
+  }
   .wrapper {
     padding: 0 5%;
   }
@@ -268,6 +271,7 @@ span {
   }
   #concept .concept-intro p {
     margin-top: 50px;
+    margin-left: 10px;
   }
   #concept .concept-gallery {
     display: grid;
@@ -276,6 +280,21 @@ span {
     grid-template-rows: auto;
     place-items: center;
     margin-top: 25px;
+  }
+
+  /* menu
+  ------------------------------------------- */
+  #menu .menu-content {
+    padding: 15px 0 5px;
+    background-color: #EDEAE5;
+  }
+  #menu .menu-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu .menu-content li {
+    width: calc(100% - 20px);
   }
 }
 
