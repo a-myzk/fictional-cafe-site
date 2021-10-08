@@ -44,6 +44,7 @@ li a:hover::after {
 }
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 h1 a {
   color: #F9F7F3;
