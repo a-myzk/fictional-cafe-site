@@ -178,18 +178,34 @@ span {
   margin: 60px auto 0;
 }
 #access .access-content {
-  padding: 0 8%;
+  padding-left: 8%;
 }
-#access .map {
-  width: 100%;
+#access .access-data {
+  display: flex;
+}
+#access .access-data .map {
+  /* width: 100%; */
   height: 300px;
   overflow: hidden;
 }
 
-#access .map iframe {
+#access .access-data .map iframe {
   width: 400px;
   height: 650px;
   margin-top: -150px;
+  margin-bottom: -150px;
+  /* aspect-ratio: 4 / 3;  ※ mapのレスポンシブ*/
+  /* width: 100%;
+  height: 100%; */
+}
+#access .access-data .access-detail {
+  margin-left: 10%;
+}
+/* access-detailのレスポンシブ（iPad Proサイズ */
+@media screen and (max-width: 834px) and (min-width:769px) {
+  #access .access-data .access-detail {
+    margin-left: 10px;
+  }
 }
 
 /* タブレットサイズ
@@ -317,6 +333,9 @@ span {
   #menu .menu-content li {
     width: calc(100% - 20px);
   }
+
+  /* access
+  ------------------------------------------- */
 }
 
 /* スマートフォンサイズ
