@@ -49,7 +49,7 @@ h1 a {
   color: #F9F7F3;
   font-size: 1.5rem;
 }
-h2 {
+h2, h3{
   font-size: 1.5rem;
 }
 p,
@@ -125,6 +125,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-left: 8%;
   height: auto;
 }
 #concept .concept-content img {
@@ -133,7 +134,6 @@ span {
 }
 #concept .concept-intro {
   margin-top: 10%;
-  margin-left: 8%;
 }
 #concept .concept-intro p {
   margin-top: 11%;
@@ -150,10 +150,10 @@ span {
 /* menu
 ------------------------------------------- */
 #menu {
-  margin-top: 65px;
+  margin: 65px auto 0;
 }
 #menu .menu-content {
-  padding: 35px 80px 25px;
+  padding: 35px 8% 25px;
   background-color: #EDEAE5;
 }
 #menu .menu-content ul {
@@ -170,6 +170,44 @@ span {
 }
 #menu .menu-content li .menu-price {
   float: right;
+}
+
+/* access
+------------------------------------------- */
+#access {
+  margin: 60px auto 120px;
+}
+#access .access-content {
+  padding-left: 8%;
+}
+#access .access-data {
+  display: flex;
+  margin-top: 50px;
+}
+#access .access-data .map {
+  height: 300px;
+  overflow: hidden;
+}
+#access .access-data .map iframe {
+  width: 400px;
+  height: 650px;
+  margin-top: -150px;
+  /* aspect-ratio: 4 / 3;  ※ mapのレスポンシブ*/
+  /* width: 100%;
+  height: 100%; */
+}
+#access .access-data .access-detail {
+  margin-top: 26px;
+  margin-left: 10%;
+}
+#access .access-data .access-detail p {
+  margin-top: 15%;
+}
+/* access-detailのレスポンシブ（iPad Proサイズ */
+@media screen and (max-width: 834px) and (min-width:769px) {
+  #access .access-data .access-detail {
+    margin-left: 30px;
+  }
 }
 
 /* タブレットサイズ
@@ -237,6 +275,7 @@ span {
     display: block;
   }
   #header ul {
+    display: flex;
     flex-direction: column;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -261,13 +300,14 @@ span {
   }
   #concept .concept-content {
     flex-flow: column;
+    padding-left: 0;
   }
   #concept .concept-content img {
     margin: 25px auto 0;
     width: 50%;
   }
   #concept .concept-intro {
-    margin: 0 5px;
+    margin: 0;
   }
   #concept .concept-intro p {
     margin-top: 50px;
@@ -296,11 +336,20 @@ span {
   #menu .menu-content li {
     width: calc(100% - 20px);
   }
+
+  /* access
+  ------------------------------------------- */
+  #access .access-content {
+    padding-left: 0;
+  }
+  #access .access-data .map iframe {
+    margin-left: 10px;
+  }
 }
 
 /* スマートフォンサイズ
 -------------------------------------------------------------------------------------- */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   /* main-visual
   ------------------------------------------- */
   .img-pc {
@@ -308,5 +357,26 @@ span {
   }
   .img-sp {
       display: block;
+  }
+
+  /* access
+  ------------------------------------------- */
+  #access {
+    margin-bottom: 50px;
+  }
+  #access .access-data {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px 0;
+  }
+  #access .access-data .map iframe {
+    margin-left: 0;
+  }
+  #access .access-data .access-detail {
+    margin-top: 30px;
+    margin-left: 22%;
+  }
+  #access .access-data .access-detail p {
+    margin-top: 15px;
   }
 }
