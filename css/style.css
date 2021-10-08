@@ -183,13 +183,11 @@ span {
 #access .access-data {
   display: flex;
   margin-top: 50px;
-
 }
 #access .access-data .map {
   height: 300px;
   overflow: hidden;
 }
-
 #access .access-data .map iframe {
   width: 400px;
   height: 650px;
@@ -277,6 +275,7 @@ span {
     display: block;
   }
   #header ul {
+    display: flex;
     flex-direction: column;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -340,6 +339,12 @@ span {
 
   /* access
   ------------------------------------------- */
+  #access .access-content {
+    padding-left: 0;
+  }
+  #access .access-data .map iframe {
+    margin-left: 10px;
+  }
 }
 
 /* スマートフォンサイズ
@@ -352,5 +357,23 @@ span {
   }
   .img-sp {
       display: block;
+  }
+
+  /* access
+  ------------------------------------------- */
+  #access .access-data {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px 0;
+  }
+  #access .access-data .map iframe {
+    margin-left: 0;
+  }
+  #access .access-data .access-detail {
+    margin-top: 30px;
+    margin-left: 22%;
+  }
+  #access .access-data .access-detail p {
+    margin-top: 15px;
   }
 }
