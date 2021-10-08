@@ -64,6 +64,9 @@ span {
   margin: 0 auto;
   padding: 0 11.71875%;
 }
+.img-sp {
+  display: none;
+}
 
 /* header
 ------------------------------------------- */
@@ -111,9 +114,6 @@ span {
   max-width: 1920px;
   height: 660px;
   object-fit: cover;
-}
-.img-sp {
-  display: none;
 }
 
 /* concept
@@ -208,6 +208,15 @@ span {
   #access .access-data .access-detail {
     margin-left: 30px;
   }
+}
+
+/* footer
+------------------------------------------- */
+#footer .footer-visual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 560px;
+  object-fit: cover;
 }
 
 /* タブレットサイズ
@@ -350,13 +359,11 @@ span {
 /* スマートフォンサイズ
 -------------------------------------------------------------------------------------- */
 @media screen and (max-width: 414px) {
-  /* main-visual
-  ------------------------------------------- */
   .img-pc {
     display: none;
   }
   .img-sp {
-      display: block;
+    display: block;
   }
 
   /* access
