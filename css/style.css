@@ -175,7 +175,7 @@ span {
 /* access
 ------------------------------------------- */
 #access {
-  margin: 60px auto 0;
+  margin: 60px auto 120px;
 }
 #access .access-content {
   padding-left: 8%;
@@ -361,6 +361,9 @@ span {
 
   /* access
   ------------------------------------------- */
+  #access {
+    margin-bottom: 50px;
+  }
   #access .access-data {
     display: flex;
     flex-direction: column;
