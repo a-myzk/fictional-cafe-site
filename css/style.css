@@ -172,6 +172,20 @@ span {
   float: right;
 }
 
+/* access
+------------------------------------------- */
+#access .map {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+#access .map iframe {
+  width: 400px;
+  height: 650px;
+  margin-top: -150px;
+}
+
 /* タブレットサイズ
 -------------------------------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
