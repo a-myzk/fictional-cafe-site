@@ -150,7 +150,7 @@ span {
 /* menu
 ------------------------------------------- */
 #menu {
-  margin: 65px auto;
+  margin: 65px auto 0;
 }
 #menu .menu-content {
   padding: 35px 8% 25px;
@@ -175,7 +175,10 @@ span {
 /* access
 ------------------------------------------- */
 #access {
-  margin-top: 60px;
+  margin: 60px auto 0;
+}
+#access .access-content {
+  padding: 0 8%;
 }
 #access .map {
   width: 100%;
