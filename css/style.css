@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* レイアウト確認用アウトライン */
-* { outline: 2px solid #f39800;}
+/* * { outline: 2px solid #f39800;} */
 
 html {
   font-size: 100%;
@@ -184,7 +184,6 @@ span {
   display: flex;
 }
 #access .access-data .map {
-  /* width: 100%; */
   height: 300px;
   overflow: hidden;
 }
@@ -193,7 +192,6 @@ span {
   width: 400px;
   height: 650px;
   margin-top: -150px;
-  margin-bottom: -150px;
   /* aspect-ratio: 4 / 3;  ※ mapのレスポンシブ*/
   /* width: 100%;
   height: 100%; */
