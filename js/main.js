@@ -5,7 +5,7 @@ $(function() {
   });
 });
 
-$(function(){
+$(function() {
   $('a[href^="#"]').click(function(){
     var adjust = 120;
     var speed = 400;
@@ -14,5 +14,13 @@ $(function(){
     var position = target.offset().top - adjust;
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
+  });
+});
+
+$(function() {
+  ScrollReveal().reveal('.animation', {
+    duration: 800,
+    viewFactor: 0.4,
+    reset: true
   });
 });

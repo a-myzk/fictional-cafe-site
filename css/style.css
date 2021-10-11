@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* レイアウト確認用アウトライン */
-* { outline: 2px solid #f39800;}
+/* * { outline: 2px solid #f39800;} */
 
 html {
   font-size: 100%;
