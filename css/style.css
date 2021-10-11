@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* レイアウト確認用アウトライン */
-/* * { outline: 2px solid #f39800;} */
+* { outline: 2px solid #f39800;}
 
 html {
   font-size: 100%;
@@ -215,6 +215,7 @@ span {
 ------------------------------------------- */
 #footer {
   position: relative;
+  z-index: -1; /* ハンバーガーメニューが下に回り込んでしまうため */
 }
 #footer .footer-visual img {
   width: 100%;
