@@ -20,7 +20,6 @@ $(function() {
 $(function() {
   ScrollReveal().reveal('.animation', {
     duration: 800,
-    viewFactor: 0.4,
-    reset: true
+    viewFactor: 0.4
   });
 });
