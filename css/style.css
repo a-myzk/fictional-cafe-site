@@ -1,4 +1,407 @@
 @charset "UTF-8";
 
 /* レイアウト確認用アウトライン */
-/* * { outline: 2px solid #8f8ead;} */
+/* * { outline: 2px solid #f39800;} */
+
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #F9F7F3;
+  color: #333333;
+  font-family: 'Libre Baskerville', serif;
+}
+a {
+  display: block;
+  padding: 0 0 5px;
+  margin-top: 5px;
+  position: relative;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+li a::before,
+li a::after {
+  border-bottom: solid 2px #F9F7F3;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+}
+li a::before {
+  left: 50%;
+}
+li a::after {
+  right: 50%;
+}
+li a:hover::before,
+li a:hover::after {
+  width: 50%;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+h1 a {
+  color: #F9F7F3;
+  font-size: 1.5rem;
+}
+h2, h3{
+  font-size: 1.5rem;
+}
+p,
+span {
+  font-family: "游ゴシック体", YuGothic;
+  font-size: 0.875rem;
+  line-height: 24px;
+}
+.wrapper {
+  max-width: 1470px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 11.71875%;
+}
+.img-sp {
+  display: none;
+}
+
+/* header
+------------------------------------------- */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 11.71875%;
+  background-color: #333333;
+  opacity: 0.85;
+}
+#header ul {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+#header li {
+  margin-right: 30px;
+}
+#header li:last-child {
+  margin-right: 0;
+}
+#header li a {
+  color: #F9F7F3;
+  font-size: 0.875rem;
+}
+#header li img .icon {
+  width: 22px;
+}
+#header .sp {
+  display: none;
+}
+#header .sp li {
+  display: none;
+}
+
+/* main-visual
+------------------------------------------- */
+#main-visual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 660px;
+  object-fit: cover;
+}
+
+/* concept
+------------------------------------------- */
+#concept {
+  margin: 0 auto;
+}
+#concept .concept-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 8%;
+  height: auto;
+}
+#concept .concept-content img {
+  margin: 53px 6% 0 15px;
+  width: 33%;
+}
+#concept .concept-intro {
+  margin-top: 10%;
+}
+#concept .concept-intro p {
+  margin-top: 11%;
+}
+#concept .concept-gallery {
+  display: grid;
+  grid-gap: 40px 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  margin-top: 12%;
+}
+
+/* menu
+------------------------------------------- */
+#menu {
+  margin: 65px auto 0;
+}
+#menu .menu-content {
+  padding: 35px 8% 25px;
+  background-color: #EDEAE5;
+}
+#menu .menu-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#menu .menu-content li {
+  width: 47%;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #C4C4C4;
+}
+#menu .menu-content li .menu-price {
+  float: right;
+}
+
+/* access
+------------------------------------------- */
+#access {
+  margin: 60px auto 120px;
+}
+#access .access-content {
+  padding-left: 8%;
+}
+#access .access-data {
+  display: flex;
+  margin-top: 50px;
+}
+#access .access-data .map {
+  height: 300px;
+  overflow: hidden;
+}
+#access .access-data .map iframe {
+  width: 400px;
+  height: 650px;
+  margin-top: -150px;
+  /* aspect-ratio: 4 / 3;  ※ mapのレスポンシブ*/
+  /* width: 100%;
+  height: 100%; */
+}
+#access .access-data .access-detail {
+  margin-top: 26px;
+  margin-left: 10%;
+}
+#access .access-data .access-detail p {
+  margin-top: 15%;
+}
+/* access-detailのレスポンシブ（iPad Proサイズ */
+@media screen and (max-width: 834px) and (min-width:769px) {
+  #access .access-data .access-detail {
+    margin-left: 30px;
+  }
+}
+
+/* footer
+------------------------------------------- */
+#footer {
+  position: relative;
+  z-index: -1; /* ハンバーガーメニューが下に回り込んでしまうため */
+}
+#footer .footer-visual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 560px;
+  object-fit: cover;
+}
+#footer .copyright {
+  position: absolute;
+  top: 500px;
+  left: 0;
+  display: grid;
+  place-items: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 60px;
+  color: #F9F7F3;
+  background-color: #333333;
+  opacity: 0.85;
+}
+
+/* タブレットサイズ
+-------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  li a::before,
+  li a::after {
+  border-bottom: solid 2px #333333;
+  }
+  h2 {
+    margin-left: 10px;
+  }
+  .wrapper {
+    padding: 0 5%;
+  }
+
+  /* header
+  ------------------------------------------- */
+  #burger-btn {
+    position: relative;
+    cursor: pointer;
+    height: 33px;
+    width: 40px;
+  }
+  #burger-btn span {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #F9F7F3;
+    border-radius: 5px;
+    transition: ease 0.75s;
+  }
+  .burger-icon span:nth-of-type(1) {
+    top: 0;
+  }
+  .burger-icon span:nth-of-type(2) {
+    top: 15px;
+  }
+  .burger-icon span:nth-of-type(3) {
+    top: 30px;
+  }
+  .active span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 18.5px;
+  }
+  .active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .active span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 18.5px;
+  }
+  #header .pc {
+    display: none;
+  }
+  #header .sp {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 10;
+    width: 270px;
+    background-color: #EDEAE5;
+  }
+  #header .sp li {
+    display: block;
+  }
+  #header ul {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 100vh;
+  }
+  #header li {
+    margin: 50px 0 0;
+  }
+  #header li:last-child {
+    margin-bottom: 100px;
+  }
+  #header li a {
+    text-align: center;
+    color: #333333;
+  }
+
+  /* concept
+  ------------------------------------------- */
+  #concept {
+    margin: 50px auto;
+  }
+  #concept .concept-content {
+    flex-flow: column;
+    padding-left: 0;
+  }
+  #concept .concept-content img {
+    margin: 25px auto 0;
+    width: 50%;
+  }
+  #concept .concept-intro {
+    margin: 0;
+  }
+  #concept .concept-intro p {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  #concept .concept-gallery {
+    display: grid;
+    grid-gap: 20px 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    margin-top: 25px;
+  }
+
+  /* menu
+  ------------------------------------------- */
+  #menu .menu-content {
+    padding: 15px 0 5px;
+    background-color: #EDEAE5;
+  }
+  #menu .menu-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu .menu-content li {
+    width: calc(100% - 20px);
+  }
+
+  /* access
+  ------------------------------------------- */
+  #access .access-content {
+    padding-left: 0;
+  }
+  #access .access-data .map iframe {
+    margin-left: 10px;
+  }
+}
+
+/* スマートフォンサイズ
+-------------------------------------------------------------------------------------- */
+@media screen and (max-width: 414px) {
+  .img-pc {
+    display: none;
+  }
+  .img-sp {
+    display: block;
+  }
+
+  /* access
+  ------------------------------------------- */
+  #access {
+    margin-bottom: 50px;
+  }
+  #access .access-data {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px 0;
+  }
+  #access .access-data .map iframe {
+    margin-left: 0;
+  }
+  #access .access-data .access-detail {
+    margin-top: 30px;
+    margin-left: 22%;
+  }
+  #access .access-data .access-detail p {
+    margin-top: 15px;
+  }
+}

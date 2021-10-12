@@ -1,15 +1,183 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>fictional-cafe-site</title>
-</head>
-<body>
-  hello
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+    <title>ONE Cafe</title>
+  </head>
+  <body>
+    <!-- header --------------------------------------------->
+    <header id="header">
+      <h1>
+        <a href="index.html">ONE Cafe</a>
+      </h1>
+      <!-- burger-menu --------------------------------------------->
+      <div id="burger-btn">
+        <div class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="sp">
+        <ul>
+          <li><a href="#concept-title">CONCEPT</a></li>
+          <li><a href="#menu-title">MENU</a></li>
+          <li><a href="#access-title">ACCESS</a></li>
+          <li>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/twitter-icon-burger-menu.svg" alt="twitter-icon-pc">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/instagram-icon-burger-menu.svg" alt="instagram-icon-pc">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- burger-menuここまで --------------------------------------------->
+      <nav class="pc">
+        <ul>
+          <li><a href="#concept-title">CONCEPT</a></li>
+          <li><a href="#menu-title">MENU</a></li>
+          <li><a href="#access-title">ACCESS</a></li>
+          <li>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/twitter-icon-pc.svg" alt="twitter-icon-pc">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="./img/instagram-icon-pc.svg" alt="instagram-icon-pc">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- headerここまで --------------------------------------------->
+
+    <!-- main-visual --------------------------------------------->
+    <main>
+      <div id="main-visual">
+        <!-- <img src="img/main-image-pc.png" alt="main-image-pc"> -->
+        <img class="img-pc" src="img/main-image-pc.png" alt="main-image-pc">
+        <img class="img-sp" src="img/main-image-responsive.png" alt="main-image-responsive">
+      </div>
+    </main>
+    <!-- main-visualここまで --------------------------------------------->
+
+    <!-- concept --------------------------------------------->
+    <section id="concept" class="wrapper">
+      <div class="concept-content">
+        <div class="concept-intro animation">
+          <h2 id="concept-title">CONCEPT</h2>
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <img class="animation" src="img/concept-right-illust.png" alt="concept-right-illust">
+      </div>
+      <div class="concept-gallery">
+        <img class="animation" src="img/concept-image1.png" alt="concept-image1">
+        <img class="animation" src="img/concept-image2.png" alt="concept-image2">
+        <img class="animation" src="img/concept-image3.png" alt="concept-image3">
+        <img class="animation" src="img/concept-image4.png" alt="concept-image4">
+        <img class="animation" src="img/concept-image5.png" alt="concept-image5">
+        <img class="animation" src="img/concept-image6.png" alt="concept-image6">
+      </div>
+    </section>
+    <!-- conceptここまで --------------------------------------------->
+
+    <!-- menu --------------------------------------------->
+    <section id="menu" class="wrapper">
+      <div class="menu-content animation">
+        <h2 id="menu-title">MENU</h2>
+        <ul>
+          <li>
+            <span class="menu-name">メニューA</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+          <li>
+            <span class="menu-name">メニューB</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+          <li>
+            <span class="menu-name">メニューC</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+          <li>
+            <span class="menu-name">メニューD</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+          <li>
+            <span class="menu-name">メニューE</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+          <li>
+            <span class="menu-name">メニューF</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+          <li>
+            <span class="menu-name">メニューG</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+          <li>
+            <span class="menu-name">メニューH</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+          <li>
+            <span class="menu-name">メニューI</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+          <li>
+            <span class="menu-name">メニューJ</span>
+            <span class="menu-price">¥ 000</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- menuここまで --------------------------------------------->
+
+    <!-- access --------------------------------------------->
+    <section id="access" class="wrapper">
+      <div class="access-content animation">
+        <h2 id="access-title">ACCESS</h2>
+        <div class="access-data">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.0747728361207!2d139.0710286152663!3d36.38318388003665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f50!3m3!1m2!1s0x601ef2fb66a6d74d%3A0x5fe9772c85529960!2z5YmN5qmL6aeF!5e0!3m2!1sja!2sjp!4v1633656084741!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="access-detail">
+            <h3>ONE Cafe</h3>
+            <p>群馬県前橋市〇〇町0丁目0−0<br>
+            tel 027-000-0000</p>
+            <p>営業時間<br>
+            平日 11:00 - 20:00<br>
+            土日祝 10:00 - 20:00<br>
+            定休日 毎週火曜日</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer-visual">
+        <img class="img-pc" src="img/footer-image-pc.png" alt="main-image-pc">
+        <img class="img-sp" src="img/footer-image-responsive.png" alt="main-image-responsive">
+      </div>
+      <div class="copyright">
+        <p><small>&copy; 2021 ONE Cafe</small></p>
+      </div>
+    </footer>
+  </body>
 </html>
