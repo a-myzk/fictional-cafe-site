@@ -82,6 +82,7 @@ span {
   padding: 0 11.71875%;
   background-color: #333333;
   opacity: 0.85;
+  z-index: 99;
 }
 #header ul {
   display: flex;
