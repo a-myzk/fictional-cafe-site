@@ -19,7 +19,7 @@ $(function() {
 
 $(function() {
   ScrollReveal().reveal('.animation', {
-    duration: 800,
-    viewFactor: 0.4
+    duration: 1200,
+    viewFactor: 0.7
   });
 });
